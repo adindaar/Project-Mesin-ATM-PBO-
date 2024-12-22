@@ -1,6 +1,10 @@
 package Tampilan;
 
+// Mengimpor kelas PreparedStatement.
+// Kelas ini digunakan untuk membuat pernyataan SQL yang telah disiapkan sebelumnya (prepared statement).
 import java.sql.PreparedStatement;
+// Mengimpor kelas JOptionPane.
+// Kelas ini digunakan untuk membuat kotak dialog sederhana
 import javax.swing.JOptionPane;
 
 
@@ -11,7 +15,7 @@ public class Menu_Utama extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
@@ -193,46 +197,53 @@ public class Menu_Utama extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void dana3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dana3ActionPerformed
-
+    private void dana3ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // Mengambil input dari event
         String nominal = evt.getActionCommand().toString();
-
+        // Menampilkan dialog informasi
         JOptionPane.showMessageDialog(this, "Transaksi berhasil\n\nJumlah : " + nominal);
-    }//GEN-LAST:event_dana3ActionPerformed
+    }                                     
 
-    private void dana2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dana2ActionPerformed
+    private void dana2ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // Mengambil input dari event
         String nominal = evt.getActionCommand().toString();
-
+        // Menampilkan dialog informasi
         JOptionPane.showMessageDialog(this, "Transaksi berhasil\n\nJumlah : " + nominal);
-    }//GEN-LAST:event_dana2ActionPerformed
+    }                                     
 
-    private void dana4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dana4ActionPerformed
+    private void dana4ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // Mengambil input dari event
         String nominal = evt.getActionCommand().toString();
-
+        // Menampilkan dialog informasi
         JOptionPane.showMessageDialog(this, "Transaksi berhasil\n\nJumlah : " + nominal);
-    }//GEN-LAST:event_dana4ActionPerformed
+    }                                     
 
-    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliActionPerformed
+    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // Menyembunyikan jendela aktif
         this.setVisible(false);
+        // Membuka jendela baru
         new Landing().setVisible(true);
-    }//GEN-LAST:event_kembaliActionPerformed
+    }                                       
 
-    private void jumlahlainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jumlahlainActionPerformed
+    private void jumlahlainActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // Menyembunyikan jendela aktif
         this.setVisible(false);
+        // Membuka jendela baru
         new JumlahLain().setVisible(true);
-    }//GEN-LAST:event_jumlahlainActionPerformed
+    }                                          
 
-    private void dana1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dana1ActionPerformed
+    private void dana1ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // Mengambil input dari event
         String nominal = evt.getActionCommand().toString();
-
+        // Menampilkan dialog informasi
         JOptionPane.showMessageDialog(this, "Transaksi berhasil\n\nJumlah : " + nominal);
-    }//GEN-LAST:event_dana1ActionPerformed
+    }                                     
 
-    private void transferActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferActionPerformed
+    private void transferActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-    }//GEN-LAST:event_transferActionPerformed
+    }                                        
 
     /**
      * @param args the command line arguments
@@ -270,7 +281,7 @@ public class Menu_Utama extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton dana1;
     private javax.swing.JButton dana2;
@@ -285,5 +296,5 @@ public class Menu_Utama extends javax.swing.JFrame {
     private javax.swing.JRadioButton setor;
     private javax.swing.JRadioButton tariktunai;
     private javax.swing.JRadioButton transfer;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
