@@ -1,5 +1,6 @@
 package Tampilan;
 
+// Mengimpor pustaka Swing
 import javax.swing.*;
 
 public class JumlahLain extends javax.swing.JFrame {
@@ -9,7 +10,7 @@ public class JumlahLain extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -86,9 +87,9 @@ public class JumlahLain extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void jumlahlainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jumlahlainActionPerformed
+    private void jumlahlainActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // Mengambil input dari event
         String nominal = evt.getActionCommand().toString();
         // Menampilkan dialog konfirmasi
@@ -98,19 +99,19 @@ public class JumlahLain extends javax.swing.JFrame {
             // memeriksa apakah pengguna memilih Yes dalam dialog konfirmasi.
             if (jawab == 0) {
                 // Pesan sukses
-                JOptionPane.showMessageDialog(this, "Tarik dana berhasil\n\n" + "Jumlah : " + nominal);
+                JOptionPane.showMessageDialog(this, "Transaksi berhasil\n\n" + "Jumlah : " + nominal);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }//GEN-LAST:event_jumlahlainActionPerformed
+    }                                          
 
-    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliActionPerformed
+    private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {                                        
         // Menyembunyikan jendela aktif
         this.setVisible(false);
         // Membuka jendela baru
         new Menu_Utama().setVisible(true);
-    }//GEN-LAST:event_kembaliActionPerformed
+    }                                       
 
     public static void main(String args[]) {
 
@@ -144,12 +145,12 @@ public class JumlahLain extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jumlahlain;
     private javax.swing.JButton kembali;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
